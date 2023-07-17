@@ -7,7 +7,7 @@ from taming.modules.discriminator.model import NLayerDiscriminator, weights_init
 from taming.modules.losses.lpips import LPIPS
 from taming.modules.losses.vqperceptual import hinge_d_loss, vanilla_d_loss
 
-from ....util import default, instantiate_from_config
+from sgm.util import default, instantiate_from_config
 
 
 def adopt_weight(weight, global_step, threshold=0, value=0.0):

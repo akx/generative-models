@@ -9,8 +9,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from einops import rearrange
 
-from ...modules.attention import SpatialTransformer
-from ...modules.diffusionmodules.util import (
+from sgm.modules.attention import SpatialTransformer
+from sgm.modules.diffusionmodules.util import (
     avg_pool_nd,
     checkpoint,
     conv_nd,
@@ -19,7 +19,7 @@ from ...modules.diffusionmodules.util import (
     timestep_embedding,
     zero_module,
 )
-from ...util import default, exists
+from sgm.util import default, exists
 
 
 # dummy replace

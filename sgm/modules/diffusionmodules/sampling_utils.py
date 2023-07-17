@@ -1,7 +1,7 @@
 import torch
 from scipy import integrate
 
-from ...util import append_dims
+from sgm.util import append_dims
 
 
 class NoDynamicThresholding:

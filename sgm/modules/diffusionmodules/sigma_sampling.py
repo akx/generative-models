@@ -1,6 +1,6 @@
 import torch
 
-from ...util import default, instantiate_from_config
+from sgm.util import default, instantiate_from_config
 
 
 class EDMSampling:

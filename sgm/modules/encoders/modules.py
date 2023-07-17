@@ -18,12 +18,12 @@ from transformers import (
     T5Tokenizer,
 )
 
-from ...modules.autoencoding.regularizers import DiagonalGaussianRegularizer
-from ...modules.diffusionmodules.model import Encoder
-from ...modules.diffusionmodules.openaimodel import Timestep
-from ...modules.diffusionmodules.util import extract_into_tensor, make_beta_schedule
-from ...modules.distributions.distributions import DiagonalGaussianDistribution
-from ...util import (
+from sgm.modules.autoencoding.regularizers import DiagonalGaussianRegularizer
+from sgm.modules.diffusionmodules.model import Encoder
+from sgm.modules.diffusionmodules.openaimodel import Timestep
+from sgm.modules.diffusionmodules.util import extract_into_tensor, make_beta_schedule
+from sgm.modules.distributions.distributions import DiagonalGaussianDistribution
+from sgm.util import (
     autocast,
     count_params,
     default,

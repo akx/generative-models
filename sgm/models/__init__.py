@@ -1,2 +1,2 @@
-from .autoencoder import AutoencodingEngine
-from .diffusion import DiffusionEngine
+from sgm.models.autoencoder import AutoencodingEngine
+from sgm.models.diffusion import DiffusionEngine

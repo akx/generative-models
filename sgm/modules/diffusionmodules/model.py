@@ -17,7 +17,7 @@ except:
     XFORMERS_IS_AVAILABLE = False
     print("no module 'xformers'. Processing without...")
 
-from ...modules.attention import LinearAttention, MemoryEfficientCrossAttention
+from sgm.modules.attention import LinearAttention, MemoryEfficientCrossAttention
 
 
 def get_timestep_embedding(timesteps, embedding_dim):

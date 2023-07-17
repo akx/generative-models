@@ -1,4 +1,4 @@
-from .encoders.modules import GeneralConditioner
+from sgm.modules.encoders.modules import GeneralConditioner
 
 UNCONDITIONAL_CONFIG = {
     "target": "sgm.modules.GeneralConditioner",

@@ -9,14 +9,14 @@ import torch
 from omegaconf import ListConfig, OmegaConf
 from tqdm import tqdm
 
-from ...modules.diffusionmodules.sampling_utils import (
+from sgm.modules.diffusionmodules.sampling_utils import (
     get_ancestral_step,
     linear_multistep_coeff,
     to_d,
     to_neg_log_sigma,
     to_sigma,
 )
-from ...util import append_dims, default, instantiate_from_config
+from sgm.util import append_dims, default, instantiate_from_config
 
 DEFAULT_GUIDER = {"target": "sgm.modules.diffusionmodules.guiders.IdentityGuider"}
 

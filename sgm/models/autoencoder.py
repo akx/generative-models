@@ -9,10 +9,10 @@ from omegaconf import ListConfig
 from packaging import version
 from safetensors.torch import load_file as load_safetensors
 
-from ..modules.diffusionmodules.model import Decoder, Encoder
-from ..modules.distributions.distributions import DiagonalGaussianDistribution
-from ..modules.ema import LitEma
-from ..util import default, get_obj_from_str, instantiate_from_config
+from sgm.modules.diffusionmodules.model import Decoder, Encoder
+from sgm.modules.distributions.distributions import DiagonalGaussianDistribution
+from sgm.modules.ema import LitEma
+from sgm.util import default, get_obj_from_str, instantiate_from_config
 
 
 class AbstractAutoencoder(pl.LightningModule):

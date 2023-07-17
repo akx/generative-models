@@ -5,7 +5,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from ....modules.distributions.distributions import DiagonalGaussianDistribution
+from sgm.modules.distributions.distributions import DiagonalGaussianDistribution
 
 
 class AbstractRegularizer(nn.Module):

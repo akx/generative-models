@@ -50,7 +50,7 @@ except:
     XFORMERS_IS_AVAILABLE = False
     print("no module 'xformers'. Processing without...")
 
-from .diffusionmodules.util import checkpoint
+from sgm.modules.diffusionmodules.util import checkpoint
 
 
 def exists(val):
@@ -861,7 +861,7 @@ def benchmark_transformer_blocks():
 
 def test01():
     # conv1x1 vs linear
-    from ..util import count_params
+    from sgm.util import count_params
 
     conv = nn.Conv2d(3, 32, kernel_size=1).cuda()
     print(count_params(conv))

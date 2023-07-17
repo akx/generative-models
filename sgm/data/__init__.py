@@ -1,1 +1,1 @@
-from .dataset import StableDataModuleFromConfig
+from sgm.data.dataset import StableDataModuleFromConfig
